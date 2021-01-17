@@ -374,12 +374,12 @@ a:active { /* selected link */
 }
 
 body{
-  background-color:#ffffff;
+  background-color:#285254;
   font-family: 'Merriweather Sans', sans-serif;
   font-size:16px;
   font0weight:300;
   line-height:1.6;
-  color:#4a4a4a;
+  color:#ffffff;
 }
 
 h1, h2, h3, h4{
@@ -410,6 +410,33 @@ h4 {
   font-weight: 4..;
 }
 
+img {
+  width: 100%;
+}
+.button:active {
+  display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
+  background-color: #85c58b;
+  color: #ffffff; /* needed to override the default link color */
+  font-weight: 400;
+  padding: 10px;
+  border-radius: 3px;
+  border-bottom: 2px solid #994c30; /* width of the border, type, color */
+  transition: 0.2s opacity;
+}
+.button:hover {
+  opacity: 0.8; /* Reduces the opacity of the button to 80% */
+  text-decoration: none;
+}
+.button.contact:active {
+  background-color: transparent;
+  color: #f6b563;
+  text-transform: uppercase;
+  border: 2px solid #f6b563;
+}
+.button.contact:hover {
+  background-color: #f6b563;
+  color: #ffffff;
+}
 img {
   width: 100%;
 }
