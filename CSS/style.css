@@ -437,6 +437,9 @@ img {
   background-color: #f6b563;
   color: #ffffff;
 }
-img {
-  width: 100%;
+header {
+  background-color: #ffffff;
+  padding: 10px;
+  margin: 10px;
+  border-bottom: 3px solid #ffffff;
 }
