@@ -93,7 +93,90 @@ img {
 }
 header {
   background-color: #ffffff;
+  text-align: center;
   padding: 10px;
   margin: 10px;
   border-bottom: 3px solid #ffffff;
+  box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.75);
+  position: relative;
+}
+
+/*Layout styling */
+.container{
+  padding: 0 15px;
+}
+.row{
+  margin:25px 0; /*25px top and bottom, 0 left and right*/
+}
+#work .row{ padding-bottom: 25px; border-bottom: 1px so lid #4a4a4a;}
+#about .row{ padding-bottom: 25px; border-bottom: 1px so lid #4a4a4a;}
+#hero h1{
+  text-align: center;
+}
+#work h2{
+  text-align: center;
+}
+#about h2{
+  text-align: center;
+}
+.logo {
+  max-width: 250px;
+}
+nav > ul {
+  list-style-type: none;
+  padding: 0;
+}
+nav > ul > li {
+  display: inline-block;
+}
+nav > ul > li > a {
+  padding: 0 15px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #3fbbb0
+}
+nav > ul > li > a:visited {
+  padding: 0 15px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #285254
+}
+nav > ul > li > a:hover {
+  padding: 0 15px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #e8e16f
+}
+nav > ul > li > a:active {
+  padding: 0 15px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #f6b563
+}
+main{
+  padding-top: 133px;
+}
+#nav {
+  display: inline-block;
+  width: 100%;
+}
+#hero {
+  background-color: #3fbbb0;
+  padding: 20px 0;
+  display: inline-block;
+  width: 100%;
+}
+
+#contact {
+  text-align: center;
+  background-color: #85c58b;
+  margin: 20px 0;
+  display: inline-block;
+  width:100%;
+}
+#work {
+  background-color: #285254;
+}
+#about {
+  background-color: #285254;
 }
