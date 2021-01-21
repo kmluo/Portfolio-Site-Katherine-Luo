@@ -180,3 +180,9 @@ main{
 #about {
   background-color: #285254;
 }
+*{
+  box-sizing: border-box;
+}
+svg {
+  max-width: 24px
+}
