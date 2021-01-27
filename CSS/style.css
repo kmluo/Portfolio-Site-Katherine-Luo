@@ -12,11 +12,12 @@ font-family: 'Trirong', serif;
 }
 
 a {
-  color: #f6b563;
-  text-decoration: none; /* No underlining */
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 400; /* No underlining */
 }
 a:visited { /* visited link */
-  color: #ff7f50;
+  color: ##ff9147;
 }
 a:hover,
 a:focus {
@@ -24,7 +25,7 @@ a:focus {
   text-decoration: underline;
 }
 a:active { /* selected link */
-  color: #994c30;
+  color: #285254;
 }
 
 body{
@@ -61,37 +62,37 @@ h3 {
 h4 {
   font-family: 'Montserrat', sans-serif;
   font-size: 1.35em;
-  font-weight: 4..;
+  font-weight: 400;
+}
+h5 {
+  font-family: 'Trirong', sans-serif;
+  font-style: italic;
+  font-size: 1em;
+  font-weight: 300;
 }
 
 img {
   width: 100%;
 }
-.button: {
-  display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
+.button {
   background-color: #f6b563;
-  color: #ffffff; /* needed to override the default link color */
-  font-weight: 400;
+  border: none;
+  color: white;
+  padding: 12px 24px;
+  text-align: center;
   text-decoration: none;
-  padding: 10px;
-  border-radius: 3px;
-  border-bottom: 2px solid #994c30; /* width of the border, type, color */
-  transition: 0.2s opacity;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 400;
+  margin: 4px 2px;
+  border-radius: 12px;
+  cursor: pointer;
 }
 .button:hover {
   opacity: 0.8; /* Reduces the opacity of the button to 80% */
   text-decoration: none;
 }
-.button.contact:active {
-  background-color: transparent;
-  color: #f6b563;
-  text-transform: uppercase;
-  border: 2px solid #f6b563;
-}
-.button.contact:hover {
-  background-color: #f6b563;
-  color: #ffffff;
-}
+
 header {
   background-color: #ffffff;
   text-align: center;
@@ -103,21 +104,21 @@ header {
 }
 
 /*Layout styling */
-.container{
+.container {
   padding: 0 15px;
 }
-.row{
+.row {
   margin:25px 0; /*25px top and bottom, 0 left and right*/
 }
-#work .row{ padding-bottom: 25px; border-bottom: 1px so lid #4a4a4a;}
-#about .row{ padding-bottom: 25px; border-bottom: 1px so lid #4a4a4a;}
-#hero h1{
+#work .row { padding-bottom: 25px; border-bottom: 1px so lid #4a4a4a;}
+#about .row { padding-bottom: 25px; border-bottom: 1px so lid #4a4a4a;}
+#hero h1 {
   text-align: center;
 }
-#work h2{
+#work h2 {
   text-align: center;
 }
-#about h2{
+#about h2 {
   text-align: center;
 }
 .logo {
@@ -154,7 +155,7 @@ nav > ul > li > a:active {
   font-weight: 700;
   color: #f6b563
 }
-main{
+main {
   padding-top: 133px;
 }
 #nav {
@@ -181,11 +182,13 @@ main{
 #about {
   background-color: #285254;
 }
-*{
-  box-sizing: border-box;
-}
 svg {
   max-width: 32px;
+  display: inline-flex;
+  align-self: center;
+  height: 1em;
+  width: 1em;
+  position: relative;
 }
 .svganimation {
   width: 100%;
@@ -194,9 +197,9 @@ svg {
 }
 @keyframes color-change {
   0% {fill: rgb(95.701599%,82.421875%,25.87738%)}
-  100% {fill: rgb(255, 228, 54);}
+  100% {fill: rgb(252, 240, 3);}
 }
-.bulb-light {
+  .bulb-light {
   animation-duration: 2s;
   animation-name: color-change;
   animation-iteration-count: infinite;
@@ -222,9 +225,23 @@ svg {
   animation-direction: alternate;
   animation-timing-function: linear;
 }
+.bulb-light.streakmid {
+  animation-duration: 2s;
+  animation-name: color-change;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
 .bulb-light.streakright1 {
   animation-duration: 1s;
   animation-name: streakright-move;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+.bulb-light.streakright1 {
+  animation-duration: 2s;
+  animation-name: color-change;
   animation-iteration-count: infinite;
   animation-direction: alternate;
   animation-timing-function: linear;
@@ -236,9 +253,23 @@ svg {
   animation-direction: alternate;
   animation-timing-function: linear;
 }
+.bulb-light.streakrightmost {
+  animation-duration: 2s;
+  animation-name: color-change;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
 .bulb-light.streakleft1 {
   animation-duration: 1s;
   animation-name: streakleft-move;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+.bulb-light.streakleft1 {
+  animation-duration: 2s;
+  animation-name: color-change;
   animation-iteration-count: infinite;
   animation-direction: alternate;
   animation-timing-function: linear;
@@ -250,7 +281,16 @@ svg {
   animation-direction: alternate;
   animation-timing-function: linear;
 }
-*
+.bulb-light.streakleftmost {
+  animation-duration: 2s;
+  animation-name: color-change;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+*{
+  box-sizing: border-box;
+}
 /* ==============================
 Medium devices (640px and larger)
 ================================= */
@@ -294,7 +334,7 @@ Medium devices (640px and larger)
   #about h3 {
     margin-top: 0;
   }
-}
+/*}
 ==============================
 Large devices (1024px or larger)
 ================================= */
