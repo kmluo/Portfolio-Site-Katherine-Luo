@@ -17,7 +17,7 @@ a {
   font-weight: 400; /* No underlining */
 }
 a:visited { /* visited link */
-  color: #ff9147;
+  color: #e67300;
 }
 a:hover,
 a:focus {
@@ -97,19 +97,21 @@ img {
 header {
   background-color: #ffffff;
   text-align: center;
-  padding: 10px;
+  padding: 10px 0;
   margin: 10px;
   border-bottom: 3px solid #ffffff;
   box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.75);
   position: relative;
 }
-
+footer {
+  display: block;
+}
 /*Layout styling */
 .container {
   padding: 0 15px;
 }
 .row {
-  margin:25px 0; /*25px top and bottom, 0 left and right*/
+  margin: 25px 0; /*25px top and bottom, 0 left and right*/
 }
 #work .row { padding-bottom: 25px; border-bottom: 1px so lid #4a4a4a;}
 #about .row { padding-bottom: 25px; border-bottom: 1px so lid #4a4a4a;}
@@ -136,7 +138,7 @@ nav > ul > li > a {
   padding: 0 15px;
   text-transform: uppercase;
   font-weight: 700;
-  color: #3fbbb0
+  color: #3fbbb0;
 }
 nav > ul > li > a:visited {
   padding: 0 15px;
@@ -162,6 +164,9 @@ main {
 #nav {
   display: inline-block;
   width: 100%;
+}
+.center {
+  text-align: center;
 }
 #hero {
   background-color: #3fbbb0;
@@ -201,7 +206,7 @@ svg {
   100% {fill: rgb(252, 240, 3);}
 }
   .bulb-light {
-  animation-duration: 2s;
+  animation-duration: 1s;
   animation-name: color-change;
   animation-iteration-count: infinite;
   animation-direction: alternate;
@@ -300,22 +305,28 @@ Medium devices (640px and larger)
   #about h3 {
     margin-top: 0;
   }
-/*}
-==============================
+}
+/*==============================
 Large devices (1024px or larger)
 ================================= */
 @media only screen and (min-width: 1024px) {
 .col-lg-5 {
   width:41.66%
 }
-  .col-lg-7 {
+.col-lg-6 {
+  width: 50%;
+}
+.col-lg-7 {
     width: 58.33%;
-  }
-  .container {
+}
+.col-lg-12 {
+    width: 100%;
+}
+.container {
     max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
-  }
+}
 }
 /* ==============================
 X-large devices (1440px or larger)
