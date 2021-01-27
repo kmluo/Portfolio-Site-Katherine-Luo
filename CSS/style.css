@@ -17,7 +17,7 @@ a {
   font-weight: 400; /* No underlining */
 }
 a:visited { /* visited link */
-  color: ##ff9147;
+  color: #ff9147;
 }
 a:hover,
 a:focus {
@@ -25,11 +25,11 @@ a:focus {
   text-decoration: underline;
 }
 a:active { /* selected link */
-  color: #285254;
+  color: #1d394a;
 }
 
 body{
-  background-color:#285254;
+  background-color:#1d394a;
   font-family: 'Merriweather Sans', sans-serif;
   font-size:16px;
   font-weight:300;
@@ -73,6 +73,7 @@ h5 {
 
 img {
   width: 100%;
+  padding: 10px 0;
 }
 .button {
   background-color: #f6b563;
@@ -141,7 +142,7 @@ nav > ul > li > a:visited {
   padding: 0 15px;
   text-transform: uppercase;
   font-weight: 700;
-  color: #285254
+  color: #1d394a
 }
 nav > ul > li > a:hover {
   padding: 0 15px;
@@ -177,10 +178,10 @@ main {
   width:100%;
 }
 #work {
-  background-color: #285254;
+  background-color: #1d394a;
 }
 #about {
-  background-color: #285254;
+  background-color: #1d394a;
 }
 svg {
   max-width: 32px;
