@@ -208,16 +208,16 @@ svg {
   animation-timing-function: linear;
 }
 @keyframes streakmid-move {
-  from {transform: translate(0, 0px);}
+  from {transform: translate(0, 0);}
   to {transform: translate(0,-20px);}
 }
 @keyframes streakright-move {
-  from {transform: translate(0, 0px);}
-  to {transform: translate(10px,-20px);}
+  from {transform: translate(0, 0);}
+  to {transform: translate(10px,-10px);}
 }
 @keyframes streakleft-move {
-  from {transform: translate(0, 0px);}
-  to {transform: translate(-10px,-20px);}
+  from {transform: translate(0, 0);}
+  to {transform: translate(-10px,-10px);}
 }
 .bulb-light.streakmid {
   animation-duration: 1s;
@@ -226,23 +226,9 @@ svg {
   animation-direction: alternate;
   animation-timing-function: linear;
 }
-.bulb-light.streakmid {
-  animation-duration: 2s;
-  animation-name: color-change;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-  animation-timing-function: linear;
-}
 .bulb-light.streakright1 {
   animation-duration: 1s;
   animation-name: streakright-move;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-  animation-timing-function: linear;
-}
-.bulb-light.streakright1 {
-  animation-duration: 2s;
-  animation-name: color-change;
   animation-iteration-count: infinite;
   animation-direction: alternate;
   animation-timing-function: linear;
@@ -254,13 +240,6 @@ svg {
   animation-direction: alternate;
   animation-timing-function: linear;
 }
-.bulb-light.streakrightmost {
-  animation-duration: 2s;
-  animation-name: color-change;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-  animation-timing-function: linear;
-}
 .bulb-light.streakleft1 {
   animation-duration: 1s;
   animation-name: streakleft-move;
@@ -268,23 +247,9 @@ svg {
   animation-direction: alternate;
   animation-timing-function: linear;
 }
-.bulb-light.streakleft1 {
-  animation-duration: 2s;
-  animation-name: color-change;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-  animation-timing-function: linear;
-}
 .bulb-light.streakleftmost {
   animation-duration: 1s;
   animation-name: streakleft-move;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-  animation-timing-function: linear;
-}
-.bulb-light.streakleftmost {
-  animation-duration: 2s;
-  animation-name: color-change;
   animation-iteration-count: infinite;
   animation-direction: alternate;
   animation-timing-function: linear;
