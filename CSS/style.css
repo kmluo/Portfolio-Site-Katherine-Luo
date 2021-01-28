@@ -113,8 +113,9 @@ footer {
 .row {
   margin: 25px 0; /*25px top and bottom, 0 left and right*/
 }
-#work .row { padding-bottom: 25px; border-bottom: 1px so lid #4a4a4a;}
-#about .row { padding-bottom: 25px; border-bottom: 1px so lid #4a4a4a;}
+#work .row { padding-bottom: 25px; border-bottom: 5px so lid #4a4a4a;}
+#about .row { padding-bottom: 25px; border-bottom: 5px so lid #4a4a4a;}
+#about .row2 { padding-bottom: 5px; border-bottom: 5px so lid #4a4a4a;}
 #hero h1 {
   text-align: center;
 }
@@ -123,13 +124,14 @@ footer {
 }
 #about h2 {
   text-align: center;
+  margin-top: 0;
 }
 .logo {
   max-width: 250px;
 }
 nav > ul {
   list-style-type: none;
-  padding: 0;
+  padding: 15px;
 }
 nav > ul > li {
   display: inline-block;
