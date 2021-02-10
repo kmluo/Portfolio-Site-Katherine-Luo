@@ -93,6 +93,47 @@ img {
   opacity: 0.8; /* Reduces the opacity of the button to 80% */
   text-decoration: none;
 }
+/*
+This is the starting grid for each video with thumbnails 4 across for the largest screen size.
+It's important to use percentages or there may be gaps on the right side of the page.
+*/
+#gallery {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#gallery .row { padding-bottom: 25px; border-bottom: 5px so lid #4a4a4a;}
+#gallery h3 {
+  text-align: center;
+}
+.video {
+  background: #ffffff;
+  padding-bottom: 150px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15);
+  width: 33%;
+  height: auto;
+  margin: 1%;
+  float: left;
+}
+
+/*
+These styles keep the height of each video thumbnail consistent between YouTube and Vimeo.
+Each can have thumbnail sizes that vary by 1px and are likely break your layout.
+*/
+
+.video figure {
+  height: 0;
+  padding-bottom: 150px;
+  overflow: hidden;
+}
+
+.video figure a {
+  display: block;
+  margin: 0;
+  padding: 0;
+  border: none;
+  line-height: 0;
+}
 
 header {
   background-color: #ffffff;
@@ -111,6 +152,7 @@ footer {
 }
 .row {
   margin: 25px 0; /*25px top and bottom, 0 left and right*/
+}
 }
 #work .row { padding-bottom: 25px; border-bottom: 5px so lid #4a4a4a;}
 #about .row { padding-bottom: 25px; border-bottom: 5px so lid #4a4a4a;}
@@ -335,6 +377,9 @@ Medium devices (640px and larger)
   #about h3 {
     margin-top: 0;
   }
+  .video {
+    width: 48%; /* Thumbnails 2 across */
+  }
 }
 /*==============================
 Large devices (1024px or larger)
@@ -357,6 +402,9 @@ Large devices (1024px or larger)
     margin-left: auto;
     margin-right: auto;
 }
+.video {
+    width: 31.333%; /* Thumbnails 3 across */
+  }
 }
 /* ==============================
 X-large devices (1440px or larger)
