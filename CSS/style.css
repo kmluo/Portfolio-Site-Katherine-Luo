@@ -97,15 +97,8 @@ img {
 This is the starting grid for each video with thumbnails 4 across for the largest screen size.
 It's important to use percentages or there may be gaps on the right side of the page.
 */
-#gallery {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-#gallery .row { padding-bottom: 25px; border-bottom: 5px so lid #4a4a4a;}
-#gallery h3 {
-  text-align: center;
-}
+/* Create four equal columns that sits next to each other */
+
 .video {
   background: #ffffff;
   padding-bottom: 150px;
@@ -150,10 +143,14 @@ footer {
 .container {
   padding: 0 15px;
 }
+.container.center {
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
 .row {
   margin: 25px 0; /*25px top and bottom, 0 left and right*/
 }
-}
+
 #work .row { padding-bottom: 25px; border-bottom: 5px so lid #4a4a4a;}
 #about .row { padding-bottom: 25px; border-bottom: 5px so lid #4a4a4a;}
 #about .row2 { padding-bottom: 5px; border-bottom: 5px so lid #4a4a4a;}
@@ -166,6 +163,9 @@ footer {
 #about h2 {
   text-align: center;
   margin-top: 0;
+}
+.container.center p {
+  padding-bottom: 10px;
 }
 #logo {
   max-width: 150px;
@@ -250,6 +250,43 @@ main {
 #about {
   background-color: #1d394a;
 }
+#gallery {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(8, 5vw);
+    grid-gap: 10px;
+    padding-bottom: 150px;
+}
+#gallery picture {
+    width: auto;
+    height: auto;
+    object-fit: scale-down;
+}
+#gallery .img1 {
+    grid-column-start: 2;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+#gallery .img2 {
+    grid-column-start: 5;
+    grid-column-end: 8;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+#gallery .img3 {
+    grid-column-start: 2;
+    grid-column-end: 5;
+    grid-row-start: 4;
+    grid-row-end: 7;
+}
+#gallery .img4 {
+    grid-column-start: 5;
+    grid-column-end: 8;
+    grid-row-start: 4;
+    grid-row-end: 7;
+}
+
 svg {
   max-width: 32px;
   display: inline-flex;
