@@ -17,7 +17,7 @@ a {
   font-weight: 400; /* No underlining */
 }
 a:visited { /* visited link */
-  color: #e67300;
+  color: #ffffff;
 }
 a:hover,
 a:focus {
@@ -25,7 +25,7 @@ a:focus {
   text-decoration: underline;
 }
 a:active { /* selected link */
-  color: #1d394a;
+  color: #ffffff;
 }
 
 body{
@@ -129,10 +129,10 @@ Each can have thumbnail sizes that vary by 1px and are likely break your layout.
 }
 
 header {
-  background-color: #ffffff;
+  background-color: #1d394a;
   padding: 10px 0 4px;
   margin: 10px;
-  border-bottom: 3px solid #ffffff;
+  border-bottom: 3px solid #1d394a;
   box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.75);
   position: relative;
 }
@@ -179,13 +179,13 @@ nav > ul > li > a {
   padding: 0 15px;
   text-transform: uppercase;
   font-weight: 700;
-  color: #3fbbb0;
+  color: #ffffff;
 }
 nav > ul > li > a:visited {
   padding: 0 15px;
   text-transform: uppercase;
   font-weight: 700;
-  color: #1d394a
+  color: #ffffff
 }
 nav > ul > li > a:hover {
   padding: 0 15px;
