@@ -6,40 +6,50 @@ font-family: 'Merriweather Sans', sans-serif;
 font-family: 'Montserrat', sans-serif;
 font-family: 'Trirong', serif;
 */
-
 [hidden] {
   display: none;
 }
 
 a {
+  background-color: inherit;
   color: #ffffff;
   text-decoration: none;
-  font-weight: 400; /* No underlining */
+  font-weight: 400;
+  /* No underlining */
 }
-a:visited { /* visited link */
+
+a:visited {
+  /* visited link */
+  background-color: inherit;
   color: #ffffff;
 }
+
 a:hover,
 a:focus {
+  background-color: inherit;
   color: #cc6540;
   text-decoration: underline;
 }
-a:active { /* selected link */
+
+a:active {
+  /* selected link */
+  background-color: inherit;
   color: #ffffff;
 }
 
-body{
-  background-color:#1d394a;
+body {
+  background-color: #1d394a;
   font-family: 'Merriweather Sans', sans-serif;
-  font-size:16px;
-  font-weight:300;
-  line-height:1.6;
-  color:#ffffff;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.6;
+  color: #ffffff;
 }
 
-h1, h2, h3, h4{
-  line-height:1.4;
+h1, h2, h3, h4 {
+  line-height: 1.4;
 }
+
 h1 {
   font-family: 'Montserrat', sans-serif;
   font-size: 2.74em;
@@ -64,6 +74,7 @@ h4 {
   font-size: 1.35em;
   font-weight: 400;
 }
+
 h5 {
   font-family: 'Trirong', sans-serif;
   font-style: italic;
@@ -75,10 +86,11 @@ img {
   width: 100%;
   padding: 10px 0;
 }
+
 .button {
   background-color: #f6b563;
   border: none;
-  color: white;
+  color: #4F4F4F;
   padding: 12px 24px;
   text-align: center;
   text-decoration: none;
@@ -89,18 +101,21 @@ img {
   border-radius: 12px;
   cursor: pointer;
 }
+
 .button:hover {
-  opacity: 0.8; /* Reduces the opacity of the button to 80% */
+  opacity: 0.9;
+  /* Reduces the opacity of the button to 80% */
   text-decoration: none;
 }
+
 /*
 This is the starting grid for each video with thumbnails 4 across for the largest screen size.
 It's important to use percentages or there may be gaps on the right side of the page.
 */
 /* Create four equal columns that sits next to each other */
-
 .video {
-  background: #ffffff;
+  background-color: inherit;
+  color: #000000;
   padding-bottom: 150px;
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15);
   width: 33%;
@@ -113,7 +128,6 @@ It's important to use percentages or there may be gaps on the right side of the 
 These styles keep the height of each video thumbnail consistent between YouTube and Vimeo.
 Each can have thumbnail sizes that vary by 1px and are likely break your layout.
 */
-
 .video figure {
   height: 0;
   padding-bottom: 150px;
@@ -129,82 +143,114 @@ Each can have thumbnail sizes that vary by 1px and are likely break your layout.
 }
 
 header {
-  background-color: #1d394a;
   padding: 10px 0 4px;
   margin: 10px;
-  border-bottom: 3px solid #1d394a;
+  border-bottom: 3px;
   box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.75);
   position: relative;
 }
+
 footer {
   display: block;
 }
+
 /*Layout styling */
 .container {
   padding: 0 15px;
 }
+
 .container.center {
   padding-top: 25px;
   padding-bottom: 25px;
 }
+
 .row {
-  margin: 25px 0; /*25px top and bottom, 0 left and right*/
+  margin: 25px 0;
+  /*25px top and bottom, 0 left and right*/
 }
 
-#work .row { padding-bottom: 25px; border-bottom: 5px so lid #4a4a4a;}
-#about .row { padding-bottom: 25px; border-bottom: 5px so lid #4a4a4a;}
-#about .row2 { padding-bottom: 5px; border-bottom: 5px so lid #4a4a4a;}
+#work .row {
+  padding-bottom: 25px;
+  border-bottom: 5px;
+}
+
+#about .row {
+  padding-bottom: 25px;
+  border-bottom: 5px;
+}
+
+#about .row2 {
+  padding-bottom: 5px;
+  border-bottom: 5px;
+}
+
 #hero h1 {
   text-align: center;
 }
+
 #work h2 {
   text-align: center;
 }
+
 #about h2 {
   text-align: center;
   margin-top: 0;
 }
+
 .container.center p {
   padding-bottom: 10px;
 }
+
 #logo {
   max-width: 150px;
 }
-nav > ul {
+
+nav>ul {
   list-style-type: none;
   padding: 0px;
   margin: 0px;
 }
-nav > ul > li > a {
+
+nav>ul>li>a {
   padding: 0 15px;
   text-transform: uppercase;
   font-weight: 700;
+  background-color: inherit;
   color: #ffffff;
 }
-nav > ul > li > a:visited {
+
+nav>ul>li>a:visited {
   padding: 0 15px;
   text-transform: uppercase;
   font-weight: 700;
-  color: #ffffff
+  background-color: inherit;
+  color: #ffffff;
 }
-nav > ul > li > a:hover {
+
+nav>ul>li>a:hover {
   padding: 0 15px;
   text-transform: uppercase;
   font-weight: 700;
-  color: #e8e16f
+  background-color: inherit;
+  color: #e8e16f;
 }
-nav > ul > li > a:active {
+
+nav>ul>li>a:active {
   padding: 0 15px;
   text-transform: uppercase;
   font-weight: 700;
-  color: #f6b563
+  background-color: inherit;
+  color: #f6b563;
 }
+
 .navtoggle li:not(:last-child) {
   display: none;
 }
+
 .navtoggle, .navtoggle.responsive {
   position: relative;
 }
+
 .navtoggle li .icon {
   position: absolute;
   right: 0;
@@ -212,24 +258,29 @@ nav > ul > li > a:active {
   font-size: 20px;
   padding-right: 0;
 }
+
 .navtoggle.responsive nav {
   padding: 24px 0 0;
 }
-.navtoggle.responsive li  {
+
+.navtoggle.responsive li {
   display: block;
   padding: 10px 0;
-  border-top: 1px solid rgba(255,127,80,0.5);
+  border-top: 1px solid rgba(255, 127, 80, 0.5);
 }
 
-.navtoggle.responsive li:last-child  {
+.navtoggle.responsive li:last-child {
   padding: 0 0 10px;
 }
+
 main {
   padding-top: 56px;
 }
+
 .center {
   text-align: center;
 }
+
 #hero {
   background-color: #3fbbb0;
   padding: 20px 0;
@@ -242,49 +293,57 @@ main {
   background-color: #3FBBB0;
   margin: 20px 0;
   display: inline-block;
-  width:100%;
+  width: 100%;
 }
+
 #work {
   background-color: #1d394a;
 }
+
 #about {
   background-color: #1d394a;
 }
+
 #gallery {
-    display: grid;
-    grid-template-columns: repeat(8, 1fr);
-    grid-template-rows: repeat(8, 5vw);
-    grid-gap: 10px;
-    padding-bottom: 150px;
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(8, 5vw);
+  grid-gap: 10px;
+  padding-bottom: 150px;
 }
+
 #gallery picture {
-    width: auto;
-    height: auto;
-    object-fit: scale-down;
+  width: auto;
+  height: auto;
+  object-fit: scale-down;
 }
+
 #gallery .img1 {
-    grid-column-start: 2;
-    grid-column-end: 5;
-    grid-row-start: 1;
-    grid-row-end: 3;
+  grid-column-start: 2;
+  grid-column-end: 5;
+  grid-row-start: 1;
+  grid-row-end: 3;
 }
+
 #gallery .img2 {
-    grid-column-start: 5;
-    grid-column-end: 8;
-    grid-row-start: 1;
-    grid-row-end: 3;
+  grid-column-start: 5;
+  grid-column-end: 8;
+  grid-row-start: 1;
+  grid-row-end: 3;
 }
+
 #gallery .img3 {
-    grid-column-start: 2;
-    grid-column-end: 5;
-    grid-row-start: 4;
-    grid-row-end: 7;
+  grid-column-start: 2;
+  grid-column-end: 5;
+  grid-row-start: 4;
+  grid-row-end: 7;
 }
+
 #gallery .img4 {
-    grid-column-start: 5;
-    grid-column-end: 8;
-    grid-row-start: 4;
-    grid-row-end: 7;
+  grid-column-start: 5;
+  grid-column-end: 8;
+  grid-row-start: 4;
+  grid-row-end: 7;
 }
 
 svg {
@@ -295,72 +354,11 @@ svg {
   width: 1em;
   position: relative;
 }
-.svganimation {
-  width: 100%;
-  max-width: 100%;
-  height: auto;
-}
-@keyframes color-change {
-  0% {fill: rgb(95.701599%,82.421875%,25.87738%)}
-  100% {fill: rgb(252, 240, 3);}
-}
-  .bulb-light {
-  animation-duration: 1s;
-  animation-name: color-change;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-  animation-timing-function: linear;
-}
-@keyframes streakmid-move {
-  from {transform: translate(0, 0);}
-  to {transform: translate(0,-20px);}
-}
-@keyframes streakright-move {
-  from {transform: translate(0, 0);}
-  to {transform: translate(10px,-10px);}
-}
-@keyframes streakleft-move {
-  from {transform: translate(0, 0);}
-  to {transform: translate(-10px,-10px);}
-}
-.bulb-light.streakmid {
-  animation-duration: 1s;
-  animation-name: streakmid-move;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-  animation-timing-function: linear;
-}
-.bulb-light.streakright1 {
-  animation-duration: 1s;
-  animation-name: streakright-move;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-  animation-timing-function: linear;
-}
-.bulb-light.streakrightmost {
-  animation-duration: 1s;
-  animation-name: streakright-move;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-  animation-timing-function: linear;
-}
-.bulb-light.streakleft1 {
-  animation-duration: 1s;
-  animation-name: streakleft-move;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-  animation-timing-function: linear;
-}
-.bulb-light.streakleftmost {
-  animation-duration: 1s;
-  animation-name: streakleft-move;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-  animation-timing-function: linear;
-}
-*{
+
+* {
   box-sizing: border-box;
 }
+
 /* ==============================
 Medium devices (640px and larger)
 ================================= */
@@ -369,82 +367,104 @@ Medium devices (640px and larger)
     text-align: unset;
     padding: 20px 0 13px;
   }
-  #logo{
+
+  #logo {
     width: auto;
   }
+
   nav {
     width: auto;
     float: right;
     margin-top: 4px;
   }
-  nav > ul > li {
+
+  nav>ul>li {
     display: inline-block;
     margin: 1em 0;
   }
+
   .navtoggle li:not(:last-child) {
-  display: inline-block;
-}
-.navtoggle li:last-child {
-  display: none;
-}
-  main{
+    display: inline-block;
+  }
+
+  .navtoggle li:last-child {
+    display: none;
+  }
+
+  main {
     padding-top: 133px;
   }
+
   body {
     font-size: 18px;
   }
+
   #hero {
     text-align: center;
   }
+
   #hero span {
     display: block;
   }
+
   .col-md-6 {
     width: 50%;
   }
+
   [class*="col-"] {
     float: left;
     padding: 10px;
   }
-  .row: ::after {
+
+  .row::after {
     content: "";
     clear: both;
     display: table;
   }
+
   #about h3 {
     margin-top: 0;
   }
+
   .video {
-    width: 48%; /* Thumbnails 2 across */
+    width: 48%;
+    /* Thumbnails 2 across */
   }
 }
+
 /*==============================
 Large devices (1024px or larger)
 ================================= */
 @media only screen and (min-width: 1024px) {
-.col-lg-5 {
-  width:41.66%
-}
-.col-lg-6 {
-  width: 50%;
-}
-.col-lg-7 {
+  .col-lg-5 {
+    width: 41.66%
+  }
+
+  .col-lg-6 {
+    width: 50%;
+  }
+
+  .col-lg-7 {
     width: 58.33%;
-}
-.col-lg-12 {
+  }
+
+  .col-lg-12 {
     width: 100%;
-}
-.container {
+  }
+
+  .container {
     max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
-}
-.video {
-    width: 31.333%; /* Thumbnails 3 across */
+  }
+
+  .video {
+    width: 31.333%;
+    /* Thumbnails 3 across */
   }
 }
+
 /* ==============================
 X-large devices (1440px or larger)
 ================================= */
-@media only screen and (min-width: 1440px) {
-}
+@media only screen and (min-width: 1440px) {}
