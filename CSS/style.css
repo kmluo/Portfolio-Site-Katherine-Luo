@@ -410,7 +410,9 @@ Medium devices (640px and larger)
   #hero h3 {
     text-align: center;
   }
-
+  #hero p {
+    text-align: center;
+  }
   .col-md-6 {
     width: 50%;
   }
