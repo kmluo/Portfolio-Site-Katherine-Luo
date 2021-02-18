@@ -187,7 +187,9 @@ footer {
 #hero h1 {
   text-align: center;
 }
-
+#hero h3 {
+  text-align: center;
+}
 #work h2 {
   text-align: center;
 }
@@ -224,7 +226,7 @@ nav>ul>li>a:visited {
   text-transform: uppercase;
   font-weight: 700;
   background-color: inherit;
-  color: #ffffff; 
+  color: #ffffff;
 }
 
 nav>ul>li>a:hover {
