@@ -404,9 +404,11 @@ Medium devices (640px and larger)
   #hero {
     text-align: center;
   }
-
-  #hero span {
-    display: block;
+  #hero h1 {
+    text-align: center;
+  }
+  #hero h3 {
+    text-align: center;
   }
 
   .col-md-6 {
